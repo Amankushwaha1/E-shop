@@ -1,0 +1,19 @@
+div {
+    background-color: yellow ;
+    text-align: center;
+}
+table{
+    text-align: center;
+    background-color: orange;
+    padding: auto;
+    border-color: blue;
+}
+body{
+    background-color: aliceblue;
+    padding: auto;
+}
+h1{
+    background-color: aqua;
+    padding: auto;
+    text-align: center;
+}

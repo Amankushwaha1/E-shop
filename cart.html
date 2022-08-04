@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="cart.js"></script>
+</head>
+<body>
+    <div name="headbar">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="cart.html">MyCart</a>
+
+    </div>
+    <h1 name="E-Shop bar">E-shop</h1>
+    <h2>Item in your Cart</h2>
+    <input type="button" value="Show Cart" onclick="showcart()">
+    <ul id="cartlist">
+        <p id="demo"></p>
+        <script>
+            for(let i=0;i<cartlist.size;i++){
+                document.getElementById("demo")=cartlist[i];
+            }
+        </script>
+    </ul>
+</body>
+</html>
+
