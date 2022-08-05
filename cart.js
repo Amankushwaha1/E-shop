@@ -16,3 +16,12 @@ function showcart(){
     text+="</ul>";
     document.getElementById("cartlist").innerHTML=text;
 }
+
+function showcartpop(){
+    let text="<ul>";
+    for(let i=0;i<cart.length;i++){
+        text+="<li>" + cart[i] + "</li>";
+    }
+    text+="</ul>";
+    document.getElementById("cartpop").innerHTML=text;
+}

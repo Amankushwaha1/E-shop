@@ -17,7 +17,7 @@
 
     </div>
     <h1 name="E-Shop bar">E-shop</h1>
-    <table aria-orientation="horizontal" name="televisions">
+    <table aria-orientation="horizontal" id="televisions">
         <td>
          <h3>Samsung</h3>
          <img src="https://images.samsung.com/is/image/samsung/p6pim/in/ua43aue60aklxl/gallery/in-uhd-4k-tv-ua43aue60aklxl-front--gray-436322463?$684_547_PNG$" width="'200" height="150">
@@ -36,11 +36,18 @@
             <h4>Price : $3000</h4>
         </td>
     </table>
-    <form>
-        <input type="button" value="Show Cart" onclick="showCart()">
+    <div id="cartsec">
+        <input type="button" value="Show Cart" onclick="showCartpop()">
+        <ul id="cartpop">
+            <p id="demo"></p>
+            <script>
+                for(let i=0;i<cartpop.size;i++){
+                    document.getElementById("demo")=cartpop[i];
+                }
+            </script>
+        </ul>
        
-       
-    </form>
+    </div>
 </body>
 
 </html>
